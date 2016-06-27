@@ -5,9 +5,8 @@
 }
 
 body {
-  background-image: -moz-linear-gradient( 90deg, rgb(42,141,251) 0%, rgb(7,48,89) 98%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(42,141,251) 0%, rgb(7,48,89) 98%);
-  background-image: -ms-linear-gradient( 90deg, rgb(42,141,251) 0%, rgb(7,48,89) 98%);
+  background-color: #2d3237;
+  color: #afb3b7;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -21,25 +20,72 @@ h5 {
   font-family: 'Industri';
 }
 
+p {
+  color: #afb3b7;
+}
+
+a,
+a:visited {
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+
+a.active,
+a:active,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+a.active::after,
+a:active::after,
+a:hover::after,
+a:focus::after {
+  bottom: -5px;
+  content: '';
+  background-color: #d63027;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1280px;
   padding: 0 25px;
 }
 
+.txt-center {
+  text-align: center;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.title.txt-left {
+  padding-left: 25px;
+}
+
+.section {
+  margin: 100px 0;
+}
+
 .title {
   color: #fff;
   font-family: 'Industri';
   font-size: 36px;
+  line-height: 45px;
   position: relative;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .title::before {
   content: '';
   display: block;
-  background-color: #3ab8fb;
+  background-color: #d63027;
   left: 0;
   height: 30px;
   position: absolute;
@@ -48,7 +94,7 @@ h5 {
 }
 
 .subtitle {
-  color: #3ab8fb;
+  color: #d63027;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 30px;
@@ -56,20 +102,22 @@ h5 {
 }
 
 .grid-item {
-  border: 2px solid #3ab8fb;
   padding: 50px;
 }
 
+.grid-item.border {
+  border: 1px solid #afb3b7;
+}
+
 .grid-item .grid-title {
-  color: #3ab8fb;
+  color: #fff;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 15px;
 }
 
 .grid-item p {
-  margin-left: 25px;
-  color: #fff;
+  color: #afb3b7;
 }
 
 .clearfix::after {
@@ -78,14 +126,63 @@ h5 {
   clear: both;
 }
 
+#hackathon-topics .grid {
+  margin: 100px 50px;
+}
+
+#hackathon-topics .grid-item p {
+  margin-left: 25px;
+}
+
+#hackathon-faq .grid-item .grid-title {
+  font-size: 18px;
+}
+
+#hackathon-faq .grid-item {
+  padding: 25px;
+}
+
 @media screen and (min-width: 768px) {
   .grid {
-
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .grid-item {
     box-sizing: border-box;
-    float: left;
     width: 33%;
+  }
+
+  .grid-item.border {
+    border: none;
+  }
+
+  .column {
+    float: left;
+  }
+
+  .section.with-sidebar .custom-sidebar {
+    margin-right: 10%;
+    width: 30%;
+  }
+
+  .section.with-sidebar .content {
+    width: 60%;
+  }
+
+  .border-top {
+    border-top: 1px solid #afb3b7;
+  }
+
+  .border-left {
+    border-left: 1px solid #afb3b7;
+  }
+
+  .border-right {
+    border-right: 1px solid #afb3b7;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid #afb3b7;
   }
 }
