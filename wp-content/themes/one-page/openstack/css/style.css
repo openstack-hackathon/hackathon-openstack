@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Industri';
+  src: url('../fonts/Industri-Bold.otf') format('opentype');
+  font-weight: normal;
+}
+
+body {
+  background-image: -moz-linear-gradient( 90deg, rgb(42,141,251) 0%, rgb(7,48,89) 98%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(42,141,251) 0%, rgb(7,48,89) 98%);
+  background-image: -ms-linear-gradient( 90deg, rgb(42,141,251) 0%, rgb(7,48,89) 98%);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Industri';
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 25px;
+}
+
+.title {
+  color: #fff;
+  font-family: 'Industri';
+  font-size: 36px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title::before {
+  content: '';
+  display: block;
+  background-color: #3ab8fb;
+  left: 0;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  width: 3px;
+}
+
+.subtitle {
+  color: #3ab8fb;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item {
+  border: 2px solid #3ab8fb;
+  padding: 50px;
+}
+
+.grid-item .grid-title {
+  color: #3ab8fb;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.grid-item p {
+  margin-left: 25px;
+  color: #fff;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+
+  }
+
+  .grid-item {
+    box-sizing: border-box;
+    float: left;
+    width: 33%;
+  }
+}
