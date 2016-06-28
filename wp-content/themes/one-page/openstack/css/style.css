@@ -7,7 +7,7 @@
 body {
   background-color: #2d3237;
   color: #afb3b7;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Verdana, sans-serif;
   font-size: 15px;
   font-weight: 400;
 }
@@ -17,7 +17,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Industri';
+  font-family: 'Industri', 'Open Sans', Verdana, sans-serif;
 }
 
 p {
@@ -75,7 +75,7 @@ a:focus::after {
 
 .title {
   color: #fff;
-  font-family: 'Industri';
+  font-family: 'Industri', 'Open Sans', Verdana, sans-serif;
   font-size: 36px;
   line-height: 45px;
   position: relative;
@@ -95,7 +95,7 @@ a:focus::after {
 
 .subtitle {
   color: #d63027;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Verdana, sans-serif;
   font-weight: 400;
   font-size: 30px;
   text-align: center;
@@ -105,7 +105,7 @@ a:focus::after {
   padding: 50px;
 }
 
-.grid-item.border {
+.border {
   border: 1px solid #afb3b7;
 }
 
@@ -126,6 +126,11 @@ a:focus::after {
   clear: both;
 }
 
+.label {
+  color: #fff;
+  font-family: 'Industri', 'Open Sans', Verdana, sans-serif;
+}
+
 #hackathon-topics .grid {
   margin: 100px 50px;
 }
@@ -139,7 +144,19 @@ a:focus::after {
 }
 
 #hackathon-faq .grid-item {
-  padding: 25px;
+  padding: 5px 25px;
+}
+
+#hackathon-hack .item {
+  padding: 15px;
+}
+
+#hackathon-hack .item .desc {
+  font-family: 'Industri', 'Open Sans', Verdana, sans-serif;
+}
+
+#hackathon-hack .desc {
+  line-height: 22px;
 }
 
 @media screen and (min-width: 768px) {
@@ -153,7 +170,7 @@ a:focus::after {
     width: 33%;
   }
 
-  .grid-item.border {
+  .border {
     border: none;
   }
 
@@ -184,5 +201,9 @@ a:focus::after {
 
   .border-bottom {
     border-bottom: 1px solid #afb3b7;
+  }
+
+  #hackathon-hack .column {
+    float: left;
   }
 }
