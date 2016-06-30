@@ -99,7 +99,8 @@ header{
   -moz-background-size:cover;
   background-size:cover;
   -o-background-size:cover;
-  color:#fff
+  color:#fff;
+  padding-right: 5%;
 }
 
 
@@ -331,6 +332,39 @@ header .sponsor img {
 }
 
 
+@media screen and (max-width: 380px) {
+  .intro-date{
+    float: none;
+    text-align: center;
+  }
+
+  header .container-logo-hackathon {
+    top: 100px;
+    left: 0%;
+  }
+
+  #hackathon-hack{
+    margin-bottom: 200px !important;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  aside{
+    display: none;
+  }
+
+  .footer{
+    background-color: #2d3237;
+    box-sizing: border-box;
+    border-top: 1px solid #4c5155;
+    position: fixed;
+    bottom: 0;
+    padding: 50px;
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1025px) {
 
   aside {
@@ -492,7 +526,9 @@ header .sponsor img {
   color: #fff;
 }
 
-
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: transparent;
+}
 
 .menu-button {
   margin: 0;
