@@ -1,41 +1,53 @@
-<!-- testimonial Section -->
-<section id="testimonial" class="section_6">
-    <div class="testimonial_div">
+<!-- pricing Section -->
+<section id="hack" class="section_7">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="main_head animated fade_in_up"><?php echo esc_attr(onepage_get_option('onepage_testimonial_main_heading', __('Testimonial Section','one-page'))); ?></h2>
-                    <hr class="testimonial_sep animated fade_in_up">
-                    <p class="main_desc animated fade_in_up"><?php echo esc_attr(onepage_get_option('onepage_testimonial_sub_heading', __('Lorem Ipsum is simply dummy text of the printing and typesetting industry.','one-page'))); ?></p>
+           
+              <h2 class="title txt-center">Hack en un bit</h2>
+           
+              <div class="border-top border-left border-right clearfix border item">
+                <div class="custom-sidebar column label">
+                  Cuando
                 </div>
-            </div>
-            <div class="row">
-                <div class="testimonial_wrapper">
-
-                    <!-- Testimonial -->
-                    <div class="testimonials-slider">
-
-                        <div class="slide">
-                            <img class="animated fade_left" src='<?php echo esc_url(onepage_get_option('onepage_testimonial_1_image', ONEPAGE_DIR_URI . "assets/images/team1.jpg")); ?>' onmouseover="javascript: this.title = '';" title="">
-                            <div class="bx-caption animated fade_right"><span><a class="arrow"></a><?php echo esc_attr(onepage_get_option('onepage_testimonial_1_content', __('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.','one-page'))); ?>
-                                    <a class="testimonial"><?php echo esc_attr(onepage_get_option('onepage_testimonial_1_name', __('Anders','one-page'))); ?></a></span></div>
-                        </div>
-
-                        <div class="slide">
-                            <img class="animated fade_left" src='<?php echo esc_url(onepage_get_option('onepage_testimonial_2_image', ONEPAGE_DIR_URI . "assets/images/team2.jpg")); ?>' onmouseover="javascript: this.title = '';" title="">
-                            <div class="bx-caption animated fade_right"><span><a class="arrow"></a><?php echo esc_attr(onepage_get_option('onepage_testimonial_2_content', __('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.','one-page'))); ?><a class="testimonial"><?php echo esc_attr(onepage_get_option('onepage_testimonial_2_name', __('Anders','one-page'))); ?></a></span></div>
-                        </div>
-
-                        <div class="slide">
-                            <img class="animated fade_left" src='<?php echo esc_url(onepage_get_option('onepage_testimonial_3_image', ONEPAGE_DIR_URI . "assets/images/team3.jpg")); ?>' onmouseover="javascript: this.title = '';" title="">
-                            <div class="bx-caption animated fade_right"><span><a class="arrow"></a><?php echo esc_attr(onepage_get_option('onepage_testimonial_3_content', __('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.','one-page'))); ?><a class="testimonial"><?php echo esc_attr(onepage_get_option('onepage_testimonial_3_name', __('Anders','one-page'))); ?></a></span></div>
-                        </div>
-                    </div>
-                    <!-- END Testimonial -->
-
+                <div class="content column desc">
+                  Septiembre 09-11
                 </div>
-            </div>
-        </div>
-    </div>
+              </div>
+              <div class="border-top border-left border-right clearfix border item">
+                <div class="custom-sidebar column label">
+                  Donde
+                </div>
+                <div class="content column desc">
+                  Tecnologico de Monterrey Campus GDL
+                </div>
+              </div>
+
+              <div class="border-top border-left border-right clearfix border item">
+                <div class="custom-sidebar column label">
+                  El reto
+                </div>
+                <div class="content column desc">
+                  Desarrollar la mejor cloud app
+                </div>
+              </div>
+
+              <div class="border-top border-left border-right clearfix border item">
+                <div class="custom-sidebar column label">
+                  Entrada
+                </div>
+                <div class="content column desc">
+                  Gratis
+                </div>
+              </div>
+
+              <div class="border-top border-left border-right border-bottom clearfix border item">
+                <div class="custom-sidebar column label">
+                  Participantes
+                </div>
+                <div class="content column desc">
+                  Equipos de 3 a 6 integrantes
+                </div>
+              </div>
+            
+      </div>
 </section>
-<!--/testimonial section-->
+<!--/ pricing Section -->

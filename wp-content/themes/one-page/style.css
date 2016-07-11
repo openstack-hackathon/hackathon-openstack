@@ -16,33 +16,8 @@ To make it easy to update your theme, you should not edit the styles in this fil
 the custom.css file to add your styles. You can copy a style from this file and paste it in 
 custom.css and it will override the style in this file. You have been warned! :)
 */
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    border:0;
-    outline:0;
-    font-size: 15px;
-    font-weight: normal;
-    font-family:'Open Sans', sans-serif;
-    vertical-align:baseline;
-    background:transparent;
-}
-body{
-	background:#FFFFFF;
-}
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
-}
+
+
 h1,
 h2,
 h3,
@@ -77,7 +52,7 @@ p{
     font-size: 15px;
     line-height: 1.8em;
     font-weight: normal;
-    color: #524E4E;
+    color: #afb3b7;
 }
 a {
     text-decoration: none;
@@ -384,87 +359,14 @@ section .main_head {
     margin-top: 16px;
     margin-bottom: 16px;
 }
-/**
-*
-* Navigation bar
-*/
-.navbar-fixed-top {
-    padding: 0px 0 0 0;
-    position: static;
-}
-.navbar-fixed-top .navbar-brand {
-    font-size: 1.5em;
-    margin-top: 21px;
-}
-.navbar-fixed-top.navbar-shrink {
-    padding: 0px 0;
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-    background: rgb(249, 249, 249);
-}
-.navbar-default .navbar-nav>.current>a,
-.navbar-default .navbar-nav>.current_page_item>a,
-.navbar-default .navbar-nav>.current>a:hover,
-.navbar-default .navbar-nav>.current>a:focus {
-    background-color: #ffcc81;
-    border-bottom: 2px solid #e39d37;
-}
-.navbar-default .navbar-nav>li>a {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #272727;
-}
-.navbar-nav>li>a {
-    padding-top: 26px;
-    padding-bottom: 21px;
-    font-size: 15px;
-    border-bottom: 2px solid #fff;
-    line-height: 21px;
-}
-.nav>li>a {
-    position: relative;
-    display: block;
-    padding: 27px 16px 22px 16px;
-}    
-.navbar-default .navbar-nav>li>a:focus {
-    background-color: #ffcc81;
-    border-bottom: 2px solid #e39d37;
-}
-.navbar-default .navbar-nav>li>a:hover{
-    color:#444;
-    border-bottom: 2px solid #e39d37;
-    background-color: #eee;
-}
-.navbar-default .navbar-brand {
-    color: #292929;
-}
-.navbar-brand {
-    float: left;
-    padding: 4px 15px 4px 15px;
-    font-size: 19px;
-    line-height: 21px;
-    min-height: 20px;
-}
-.navbar-brand {
-    line-height: 1;
-    font-size: 1.5em;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
-    /*margin-top: 21px;*/
-}
-.navbar-right {
-    float: right !important;
-    margin-right: -15px;
-}
+
 /* Home Page Slit Style
  * Full Screen Slider Style
  */
 .sl-slider-wrapper {
     height: auto;
     display: block;
-    height: 726px;
+    height: 790px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -946,7 +848,7 @@ section .main_head {
 .services_div .services_item h4 {
     font-size: 18px;
     line-height: 1.4;
-    color: #000000;
+    color: #fff;
     font-weight: normal;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -956,13 +858,13 @@ section .main_head {
     font-size: 15px;
     line-height: 24px;
     font-weight: normal;
-    color: #524E4E;
+    color: #afb3b7;
 }
 /**
  * Home Page Blog Style
  */
 .blog_div h2 {
-    color: #fff;
+        color: #272727;
 }
 .blog_div .blog_sep {
     width: 23%;
@@ -991,6 +893,7 @@ section .main_head {
     margin: 10px 0 17px 0;
     font-weight: 700;
     line-height: 1.3em;
+        color: #272727;
 }
 .blog_div .post .post_image {
     position: relative;
@@ -1892,7 +1795,7 @@ input[type="submit"]:hover {
 }
 .post_content a{
     padding-bottom: 1px;
-    color: #524E4E;
+    color: #afb3b7;
     text-decoration: none !important;
 }
 .post_content  a:hover{
@@ -2157,7 +2060,7 @@ a.read-more {
     padding: 1.176em;
 }
 .widget_area a{
-    color: #524E4E;
+    color: #afb3b7;
     transition:all .3s;
 }
 .widget_area li a:hover{
@@ -2235,7 +2138,7 @@ a.read-more {
     border-bottom:1px solid #d5d6d7;
 }
 .sidebar .tagcloud a{
-    color: #524E4E;
+    color: #afb3b7;
     padding-bottom: 1px;
     border-bottom: none;
 }
@@ -2363,7 +2266,7 @@ a.read-more {
 /* ** blog posts ends*/
 /* *****************calender widgets*********** */
 .widget_area table caption {
-    color:#524E4E;
+    color:#afb3b7;
 }
 .widget_area table caption {
     border: 1px solid #DDD;

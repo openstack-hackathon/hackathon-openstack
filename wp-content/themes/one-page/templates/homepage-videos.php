@@ -1,20 +1,40 @@
-<!--iframe/video section-->
-<section id="frame" class="section_5">
-    <div class="frame_div">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="main_head animated fade_in_up"><?php echo esc_attr(onepage_get_option('onepage_video_main_heading', __('Video Section','one-page'))); ?></h2>
-                    <hr class="frame_sep animated fade_in_up">
-                    <p class="main_desc animated fade_in_up"><?php echo esc_attr(onepage_get_option('onepage_video_sub_heading', __('Lorem Ipsum is simply dummy text of the printing and typesetting industry.','one-page'))); ?></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="frame_wrapper animated fade_in_up">
-                    <?php echo onepage_get_option('onepage_video_iframe', '<iframe src="https://www.youtube.com/embed/D0a0aNqTehM" width="900" height="510" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'); ?>
-                </div>
-            </div>
+<!--blog & news section-->
+<section id="tematicas" class="section_3">
+   <div class="container">
+        <h2 class="title txt-center">Tem&aacute;ticas</h2>
+        <h3 class="subtitle">6 tem&aacute;ticas para que desarrolles tu aplicaci&oacute;n</h3>
+
+        <div class="grid">
+          <div class="grid-item border-top border-left border">
+            <h4 class="grid-title">IoT/WEARABLE/DRONES</h4>
+            <p></p>
+          </div>
+
+          <div class="grid-item border-top border-left border">
+            <h4 class="grid-title">MEDIA AND VIDEO</h4>
+            <p></p>
+          </div>
+
+          <div class="grid-item border-top border-left border-right border">
+            <h4 class="grid-title">SALUD</h4>
+            <p></p>
+          </div>
+
+          <div class="grid-item border-top border-left border-bottom border">
+            <h4 class="grid-title">INNOVACI&Oacute;N SOCIAL</h4>
+            <p></p>
+          </div>
+
+          <div class="grid-item border-top border-left border-bottom border">
+            <h4 class="grid-title">FINTECH</h4>
+            <p></p>
+          </div>
+
+          <div class="grid-item border-top border-left border-bottom border-right border">
+            <h4 class="grid-title">MAKERS</h4>
+            <p></p>
+          </div>
         </div>
-    </div>
+      </div>
 </section>
-<!--/iframe/video section-->
+<!--/blog & news section-->

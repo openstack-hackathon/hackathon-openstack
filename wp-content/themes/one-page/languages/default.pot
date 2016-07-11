@@ -156,7 +156,7 @@ msgstr ""
 
 #: functions.php:206 functions.php:272 functions.php:316 functions.php:318
 #: functions.php:331
-msgid "Home"
+msgid "Inicio"
 msgstr ""
 
 #: functions.php:212 functions.php:275

@@ -1,65 +1,56 @@
-<!-- pricing Section -->
-<section id="pricing" class="section_7">
-    <div class="pricing_div">
+<!-- testimonial Section -->
+<section id="noticias" class="section_6">
+         <div class="blog_div">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="main_head animated fade_in_up"><?php echo esc_attr(onepage_get_option('onepage_pricing_main_heading', __('Checkout Pricing Section','one-page'))); ?></h2>
-                    <hr class="pricing_sep animated fade_in_up">
-                    <p class="main_desc animated fade_in_up"><?php echo esc_attr(onepage_get_option('onepage_pricing_sub_heading', __('Lorem Ipsum is simply dummy text of the printing and typesetting industry.','one-page'))); ?></p>
+                    <h2 class="title txt-center">Noticias/Blog</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="pricing_wrapper">
-                    <style></style>
-                    <div class="col-md-4">
-                        <div class="pricing_item one animated bounce" style="animation-delay: .3s;">
-                            <ul>
-                                <li class="table_icon"><span class="glyphicon <?php echo esc_attr(onepage_get_option('onepage_pricing_box1_icon', 'glyphicon-shopping-cart')); ?>"></span></li>
-                                <li class="table_heading"><h3><?php echo esc_attr(onepage_get_option('onepage_pricing_box1_heading', __('Single Plan','one-page'))); ?></h3></li>
-                                <li class="table_price"><?php echo esc_attr(onepage_get_option('onepage_pricing_box1_price', '$59')); ?></li>
-                                <li><?php echo esc_attr(onepage_get_option('onepage_pricing_box1_feature1', __('Unlimited Access','one-page'))); ?></li>
-                                <li><?php echo esc_attr(onepage_get_option('onepage_pricing_box1_feature2', __('20 GB Storage','one-page'))); ?></li>
-                                <li><?php echo esc_attr(onepage_get_option('onepage_pricing_box1_feature3', __('200 Cups of Coffee Free','one-page'))); ?></li>
-                                <li><?php echo esc_attr(onepage_get_option('onepage_pricing_box1_feature4', __('6 Months Support','one-page'))); ?></li>
-                                <li><?php echo esc_attr(onepage_get_option('onepage_pricing_box1_feature5', __('Full Theme Access','one-page'))); ?></li>
-                                <li class="table_button"><a href="<?php echo esc_url(onepage_get_option('onepage_pricing_box1_button_link', '#')); ?>"><?php echo esc_attr(onepage_get_option('onepage_pricing_box1_button_text', __('View Theme','one-page'))); ?></a></li>
-                            </ul>
+            <div class="row homepage_blogs" data-masonry>
+                <?php
+                $i = 1;
+                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                $no_of_post = onepage_get_option('onepage_blog_post_number', '3');
+                $args = array(
+                    'post_type' => 'post',
+                    'posts_per_page' => $no_of_post,
+                    'ignore_sticky_posts' => true,
+                    'paged' => $paged,
+                    'tag__not_in'=>  onepage_get_option( 'onepage_portfolio_tag' ) 
+                );
+                $query = new WP_Query($args);
+                if ($query->have_posts()) :
+                    while ($query->have_posts()) :
+                        $query->the_post();
+                        ?>
+                        <div class="col-md-4 post_item_wrapper" >
+                            <div class="post animated zoom_in homepage_post" style="animation-delay: <?php (.4 * $i) ?>s">
+                                <?php if (has_post_thumbnail()) { ?>
+                                    <div class="post_image">
+                                        <?php onepage_get_thumbnail(300, 240); ?>
+                                    </div>
+                                    <?php
+                                }
+                                ?>
+
+                                <h3>  <?php the_title(); ?></h3>
+                                <p><?php echo substr(get_the_excerpt(), 0, 200) . '[...]'; ?></p>
+                                <a class="  read_more button" href="<?php the_permalink() ?>"><?php echo onepage_get_option('onepage_blog_read_more_text', __('Read More', 'one-page')); ?></a>
+                            </div>
                         </div>
+                        <?php
+                    endwhile;
+                    $i++;
+                else:
+                    ?>
+                    <div class="blogs_page_container post">
+                        <p>
+                            <?php _e('Sorry, no posts matched your criteria.', 'one-page'); ?>
+                        </p>
                     </div>
-                    <div class="col-md-4">
-                        <div class="pricing_item two animated bounce" style="animation-delay: .6s;">
-                            <ul>
-                                <li class="table_icon"><span class="glyphicon <?php echo esc_attr(onepage_get_option('onepage_pricing_box2_icon', 'glyphicon-hourglass')); ?>"></span></li>
-                                <li class="table_heading"><h3><?php echo esc_attr(onepage_get_option('onepage_pricing_box2_heading', __('Multiple Plan','one-page'))); ?></h3></li>
-                                <li class="table_price" <?php echo "style='color:" . onepage_get_option('onepage_pricing_box_pricing_color', '#fff') . "; border-color:" . onepage_get_option('onepage_pricing_box_pricing_bottom_border_color', '#F8C841') . ";'"; ?>><?php echo esc_attr(onepage_get_option('onepage_pricing_box2_price', '$99')); ?></li>
-                                <li><?php echo esc_attr(onepage_get_option('onepage_pricing_box2_feature1', __('Unlimited Access','one-page'))); ?></li>
-                                <li><?php echo esc_attr(onepage_get_option('onepage_pricing_box2_feature2', __('20 GB Storage','one-page'))); ?></li>
-                                <li><?php echo esc_attr(onepage_get_option('onepage_pricing_box2_feature3', __('200 Cups of Coffee Free','one-page'))); ?></li>
-                                <li><?php echo esc_attr(onepage_get_option('onepage_pricing_box2_feature4', __('6 Months Support','one-page'))); ?></li>
-                                <li><?php echo esc_attr(onepage_get_option('onepage_pricing_box2_feature5', __('Full Theme Access','one-page'))); ?></li>
-                                <li class="table_button"><a href="<?php echo esc_url(onepage_get_option('onepage_pricing_box2_button_link', '#')); ?>"><?php echo esc_attr(onepage_get_option('onepage_pricing_box2_button_text', __('View Theme','one-page'))); ?></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="pricing_item three animated bounce" style="animation-delay: .9s;">
-                            <ul>
-                                <li class="table_icon"><span class="glyphicon <?php echo esc_attr(onepage_get_option('onepage_pricing_box3_icon', 'glyphicon-shopping-cart')); ?>"></span></li>
-                                <li class="table_heading"><h3><?php echo esc_attr(onepage_get_option('onepage_pricing_box3_heading', __('Full Member','one-page'))); ?></h3></li>
-                                <li class="table_price" <?php echo "style='color:" . onepage_get_option('onepage_pricing_box_pricing_color', '#fff') . "; border-color:" . onepage_get_option('onepage_pricing_box_pricing_bottom_border_color', '#F8C841') . ";'"; ?>><?php echo esc_attr(onepage_get_option('onepage_pricing_box3_price', '$250')); ?></li>
-                                <li><?php echo esc_attr(onepage_get_option('onepage_pricing_box3_feature1', __('Unlimited Access','one-page'))); ?></li>
-                                <li><?php echo esc_attr(onepage_get_option('onepage_pricing_box3_feature2', __('20 GB Storage','one-page'))); ?></li>
-                                <li><?php echo esc_attr(onepage_get_option('onepage_pricing_box3_feature3', __('200 Cups of Coffee Free','one-page'))); ?></li>
-                                <li><?php echo esc_attr(onepage_get_option('onepage_pricing_box3_feature4', __('6 Months Support','one-page'))); ?></li>
-                                <li><?php echo esc_attr(onepage_get_option('onepage_pricing_box3_feature5', __('Full Theme Access','one-page'))); ?></li>
-                                <li class="table_button"><a href="<?php echo esc_url(onepage_get_option('onepage_pricing_box3_button_link', '#')); ?>"><?php echo esc_attr(onepage_get_option('onepage_pricing_box3_button_text', __('View Theme','one-page'))); ?></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <?php endif; ?>
             </div>
         </div>
-    </div>
 </section>
-<!--/ pricing Section -->
+<!--/testimonial section-->

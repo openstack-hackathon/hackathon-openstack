@@ -11,8 +11,8 @@ if ( post_password_required() ) {
 	<?php if ( have_comments() ) : ?>
 		<h3 id="comments">
 			<?php
-			comments_number( __( 'No Responses', 'one-page' ), __( 'One Response', 'one-page' ), __( '% Responses', 'one-page' ) );
-			_e( 'so far.', 'one-page' );
+			comments_number( __( 'Sin respuestas', 'one-page' ), __( 'Una Respuesta', 'one-page' ), __( '% Respuestas', 'one-page' ) );
+			_e( 'al momento.', 'one-page' );
 			?></h3>
 		<ol class="commentlist">
 			<?php wp_list_comments( array( 'avatar_size' => 70 ) ); ?>
@@ -33,7 +33,7 @@ if ( post_password_required() ) {
 			<div id="comment-form">
 				<div class="clearfix"></div>
 				<?php
-				comment_form( array( 'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun', 'one-page' ) . ' <span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>' ) );
+				comment_form( array( 'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Commentario', 'ninguno', 'one-page' ) . ' <span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>' ) );
 				?>
 			</div>
 		</div>

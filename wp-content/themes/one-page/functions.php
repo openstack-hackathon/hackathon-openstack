@@ -58,14 +58,23 @@ function onepage_styles() {
      * Theme main style file
      */
     wp_enqueue_style('one-page-style', get_stylesheet_uri());
+
+    /**
+      * Hackathon CSS file
+     */
+        wp_enqueue_style('one-page-hackathon', ONEPAGE_DIR_URI . 'assets/css/hackathon-style.css');
+
     /**
      * Mean-menu CSS file for mobile & small devices
      */
-    wp_enqueue_style('one-page-mean-menu', ONEPAGE_DIR_URI . 'assets/css/meanmenu.css');
+    wp_enqueue_style('hackathon-menu', ONEPAGE_DIR_URI . 'assets/css/hackathon-menu.css');
+
     /**
      * Responsive CSS file
      */
     wp_enqueue_style('one-page-responsive', ONEPAGE_DIR_URI . 'assets/css/responsive.css');
+
+
 }
 
 add_action('wp_enqueue_scripts', 'onepage_styles');
@@ -211,39 +220,42 @@ function onepage_default_menu() {
 // Set up default OnePage Menu links and add them to the menu.
 
         wp_update_nav_menu_item($menu_id, 0, array(
-            'menu-item-title' => __('Home', 'one-page'),
+            'menu-item-title' => __('Inicio', 'one-page'),
             'menu-item-classes' => 'home',
             'menu-item-url' => '#page-top',
             'menu-item-status' => 'publish'));
 
         wp_update_nav_menu_item($menu_id, 0, array(
-            'menu-item-title' => __('Services', 'one-page'),
+            'menu-item-title' => __('¿Qué es el hackathon?', 'one-page'),
             'menu-item-classes' => 'services',
             'menu-item-url' => '#services',
             'menu-item-status' => 'publish'));
 
         wp_update_nav_menu_item($menu_id, 0, array(
-            'menu-item-title' => __('Blog', 'one-page'),
-            'menu-item-classes' => 'blog',
-            'menu-item-url' => '#blog',
-            'menu-item-status' => 'publish'));
-
-        // wp_update_nav_menu_item($menu_id, 0, array(
-        //     'menu-item-title' => __('Gallery', 'one-page'),
-        //     'menu-item-classes' => 'gallery',
-        //     'menu-item-url' => '#gallery',
-        //     'menu-item-status' => 'publish'));
-
-        wp_update_nav_menu_item($menu_id, 0, array(
-            'menu-item-title' => __('Pricing', 'one-page'),
-            'menu-item-classes' => 'pricing',
-            'menu-item-url' => '#pricing',
-            'menu-item-status' => 'publish'));
-        wp_update_nav_menu_item($menu_id, 0, array(
-            'menu-item-title' => __('Team', 'one-page'),
+            'menu-item-title' => __('¿Quién puede participar?', 'one-page'),
             'menu-item-classes' => 'team',
             'menu-item-url' => '#team',
             'menu-item-status' => 'publish'));
+
+        wp_update_nav_menu_item($menu_id, 0, array(
+            'menu-item-title' => __('¿Dondé se realizará?', 'one-page'),
+            'menu-item-classes' => 'Noticias',
+            'menu-item-url' => '#blog',
+            'menu-item-status' => 'publish'));
+
+
+        wp_update_nav_menu_item($menu_id, 0, array(
+            'menu-item-title' => __('Actividades de pre-entrenamiento ', 'one-page'),
+            'menu-item-classes' => 'FAQ',
+            'menu-item-url' => '#pricing',
+            'menu-item-status' => 'publish'));
+
+        wp_update_nav_menu_item($menu_id, 0, array(
+            'menu-item-title' => __('FAQ', 'one-page'),
+            'menu-item-classes' => 'team',
+            'menu-item-url' => '#team',
+            'menu-item-status' => 'publish'));
+
         wp_update_nav_menu_item($menu_id, 0, array(
             'menu-item-title' => __('Contact', 'one-page'),
             'menu-item-classes' => 'contact',
@@ -277,7 +289,7 @@ function onepage_front_nav() {
 function onepage_front_nav_fallback() {
     ?><ul class="nav navbar-nav navbar-right sf-menu" id="onepage_menu">
         <li class="page-scroll">
-            <a href="#page-top"><?php _e('Home', 'one-page'); ?></a>
+            <a href="#page-top"><?php _e('Inicio', 'one-page'); ?></a>
         </li>
         <li class="page-scroll">
             <a href="#services"><?php _e('Services', 'one-page'); ?></a>
@@ -321,9 +333,9 @@ function onepage_nav_fallback() {
 
 function onepage_nav_menu_items($items) {
     if (is_home()) {
-        $homelink = '<li class="current_page_item">' . '<a href="' . esc_url(home_url('/')) . '">' . __('Home', 'one-page') . '</a></li>';
+        $homelink = '<li class="current_page_item">' . '<a href="' . esc_url(home_url('/')) . '">' . __('Inicio', 'one-page') . '</a></li>';
     } else {
-        $homelink = '<li>' . '<a href="' . esc_url(home_url('/')) . '">' . __('Home', 'one-page') . '</a></li>';
+        $homelink = '<li>' . '<a href="' . esc_url(home_url('/')) . '">' . __('Inicio', 'one-page') . '</a></li>';
     }
     $items = $homelink . $items;
     return $items;
@@ -336,7 +348,7 @@ add_filter('wp_list_pages', 'onepage_nav_menu_items');
 
 function onepage_breadcrumbs() {
     $delimiter = '&raquo;';
-    $home = __('Home', 'one-page'); // text for the 'Home' link
+    $home = __('Inicio', 'one-page'); // text for the 'Home' link
     $before = '<span class="current">'; // tag before the current crumb
     $after = '</span>'; // tag after the current crumb
     echo '<div id="crumbs">';
@@ -900,21 +912,7 @@ function customizer_css() {
             .header .navbar {
                 background-color:" . onepage_get_option('onepage_header_bg_color', '#ffffff') . ";
             }
-            .navbar-default .navbar-nav>li>a{
-                color:" . onepage_get_option('onepage_menu_list_color', '#272727') . ";
-                border-bottom-color:" . onepage_get_option('onepage_header_bg_color', '#fff') . ";
-            }
-            .navbar-default .navbar-nav>li>a:hover {
-                border-bottom-color:" . onepage_get_option('onepage_menu_list_hover_border_color', '#e39d37') . ";
-                background-color:" . onepage_get_option('onepage_menu_list_hover_bg_color', '#eee') . ";
-                color:" . onepage_get_option('onepage_menu_list_color', '#272727') . ";
-            }
-            .navbar-default .navbar-nav>.current>a,
-            .navbar-default .navbar-nav>.current_page_item>a,
-            .navbar-default .navbar-nav>.current>a:hover,
-            .navbar-default .navbar-nav>.current>a:focus{
-                background-color:" . onepage_get_option('onepage_menu_list_active_bg_color', '#ffcc81') . ";
-            }
+
             .header .logo h1{
                 color:" . onepage_get_option('onepage_header_logo_text_color', '#272727') . ";
             }
@@ -941,7 +939,7 @@ function customizer_css() {
             .widget_area a,
             .sidebar .tagcloud a,
             .widget_area table caption{
-                color:" . onepage_get_option('pages_text_color_scheme', '#524E4E') . ";
+                color:" . onepage_get_option('pages_text_color_scheme', '#afb3b7') . ";
             }
             /*Breadcrumbs, search bar, table background color*/
             .homepage_nav_title,
@@ -1080,9 +1078,7 @@ function customizer_css() {
         background-color: " . onepage_get_option('onepage_pricing_box_button_color', '#dfae45') . ";
     }
 /* Services section */
-    #services{
-        background-color:" . onepage_get_option('onepage_service_box_bg_color', '#fff') . ";
-    }
+    
     .services_div .service_sep {
         background-color: " . section_strip_color(onepage_get_option('onepage_service_box_bg_color', '#ffffff')) . ";
     }
@@ -1109,9 +1105,7 @@ function customizer_css() {
         border-color: " . onepage_get_option('onepage_service_box_color_border_4', '#9792d4') . ";
     }
 /* Team section */
-    .team_div{
-        background-color: " . onepage_get_option('onepage_team_bg_color', '#FFF') . ";
-    }
+    
     .team_div h2{
         color:" . onepage_get_option('onepage_team_section_heading_color', '#272727') . ";
     }

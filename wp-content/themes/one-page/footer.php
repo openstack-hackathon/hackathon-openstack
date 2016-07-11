@@ -23,39 +23,27 @@ if ( is_active_sidebar( 'first-footer-widget-area' ) || is_active_sidebar( 'seco
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-					<?php
-					$logo = '';
-					$logo_text = '';
-					$logo_text = onepage_get_option( 'onepage_header_logo_text' );
-					if ( isset( $logo_text ) && $logo_text != '' ) {
-						$logo = "<h1 class='logo_text_footer'>" . $logo_text . "</h1>";
-					} else {
-						$logo = "<img src='" . onepage_get_option( 'onepage_header_logo_img', ONEPAGE_DIR_URI . 'assets/images/site_logo.png' ) . "' alt='logo' />";
-					}
-					echo $logo;
-					?>
+					<h1 class='logo_text_footer'>Hackathon OpenStack Guadalajara</h1>
+					
+                    <p>¿Tienes alguna duda? ¡Contactános!</p>
+                     <p>contacto@hackathon.openstackgdl.org</p>
 
                     <ul class="footer_social">
                         <li>
-                            <a class="fb animated bounce" href="<?php echo esc_url( onepage_get_option( 'onepage_fb_link', '#' ) ); ?>" title="FaceBook" style="animation-delay: .2s"><i class="fa fa-fw fa-facebook"></i></a>
+                            <a class="fb animated bounce" target="_blank" href="https://www.facebook.com/HackathonOpenStack" title="FaceBook" style="animation-delay: .2s">
+                            <i class="fa fa-fw fa-facebook"></i></a>
                         </li>
                         <li >
-                            <a class="tw animated bounce" href="<?php echo esc_url( onepage_get_option( 'onepage_tw_link', '#' ) ); ?>" title="Twitter" style="animation-delay: .4s"><i class="fa fa-fw fa-twitter"></i></a>
-                        </li>
-                        <li >
-                            <a class="gp animated bounce" href="<?php echo esc_url( onepage_get_option( 'onepage_g_plus_link', '#' ) ); ?>" title="Google Plus" style="animation-delay: .6s"><i class="fa fa-fw fa-google-plus"></i></a>
-                        </li>
-                        <li >
-                            <a class="rss animated bounce" href="<?php echo esc_url( onepage_get_option( 'onepage_rss_link', '#' ) ); ?>" title="RSS" style="animation-delay: .8s"><i class="fa fa-fw fa-rss"></i></a>
-                        </li>
-                        <li >
-                            <a class="pn animated bounce" href="<?php echo esc_url( onepage_get_option( 'onepage_pinterest_link', '#' ) ); ?>" title="Pinterest" style="animation-delay: 1s"><i class="fa fa-pinterest-p"></i></a>
+                            <a class="tw animated bounce" target="_blank" href="https://twitter.com/OpenStackHack" title="Twitter" style="animation-delay: .4s">
+                            <i class="fa fa-fw fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a class="ln animated bounce" href="<?php echo esc_url( onepage_get_option( 'onepage_ln_link', '#' ) ); ?>" title="LinkedIn" style="animation-delay: 1.2s"><i class="fa fa-fw fa-linkedin"></i></a>
+                            <a class="ln animated bounce" target="_blank" href="https://cloud-app-hackathon.slack.com" title="slack" style="animation-delay: 1.2s">
+                            <i class="fa fa-fw fa-slack"></i></a>
                         </li>
+                        
                     </ul>
-                    <p><?php echo esc_attr( onepage_get_option( 'onepage_footer_copyright_text', 'Copyright &copy; InkThemes.com' ) ); ?></p>
+                    
                     <div class="scroll-top page-scroll visible-xs visible-sm">
                         <a class="to_top page-scroll" href="#page-top">
                             <i class="fa fa-chevron-up"></i>
