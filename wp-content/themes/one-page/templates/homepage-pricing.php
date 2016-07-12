@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="title txt-center">Noticias/Blog</h2>
+                    <h2 class="title txt-center">Noticias</h2>
                 </div>
             </div>
             <div class="row homepage_blogs" data-masonry>

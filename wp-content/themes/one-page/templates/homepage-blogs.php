@@ -39,7 +39,7 @@
                     <div class="services_item animated fade_in_up" style="animation-delay: .9s">
                         <span class="glyphicon <?php echo esc_attr(onepage_get_option('onepage_service_box_icon_3', 'glyphicon-headphones')); ?> three"></span>
                         <h4><?php echo esc_attr(onepage_get_option('onepage_service_box_heading_3', __('¿Habrá entrenamientos?','one-page'))); ?></h4>
-                        <p>No te preocupes, contaremos con mentores de las empresas líderes tecnológicas de LATAM para ayudarte a desarrollar tu aplicación. Además, durante el mes de agosto tendremos <a href="/2016/07/11/actividades-de-pre-entrenamiento/">actividades de pre-entrenamiento</a> para prepararte para el reto.</p>
+                        <p>No te preocupes, contaremos con mentores de las empresas líderes tecnológicas de LATAM para ayudarte a desarrollar tu aplicación. Además, durante el mes de agosto tendremos <a href="/2016/07/12/atividades-de-pre-entrenamiento/">actividades de pre-entrenamiento</a> para prepararte para el reto.</p>
                     </div>
                 </div>
                 <!-- /Service Box 3 -->
