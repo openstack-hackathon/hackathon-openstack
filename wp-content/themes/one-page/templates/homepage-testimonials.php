@@ -9,7 +9,7 @@
                   Cuando
                 </div>
                 <div class="content column desc">
-                  Septiembre 09-11
+                  Septiembre del 09 al 11
                 </div>
               </div>
               <div class="border-top border-left border-right clearfix border item">
@@ -32,10 +32,10 @@
 
               <div class="border-top border-left border-right clearfix border item">
                 <div class="custom-sidebar column label">
-                  Entrada
+                  Registro
                 </div>
                 <div class="content column desc">
-                  Gratis
+                  Libre
                 </div>
               </div>
 
