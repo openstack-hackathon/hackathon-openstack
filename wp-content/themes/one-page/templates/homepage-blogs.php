@@ -21,7 +21,7 @@
                     <div class="services_item animated fade_in_up" style="animation-delay: .3s">
                         <span class="glyphicon <?php echo esc_attr(onepage_get_option('onepage_service_box_icon_1', 'glyphicon-paperclip')); ?> one"></span>
                         <h4><?php echo esc_attr(onepage_get_option('onepage_service_box_heading_1', __('¿Qué es el hackathon?','one-page'))); ?></h4>
-                        <p>Es un evento de 3 días para hackear la mejor cloud-application, se llevara a cabo en el Tecnológico de Monterrey del 9 al 11 de Septiembre. Los ganadores tendrán la oportunidad de viajar al <a href="https://www.eventbrite.com/e/openstack-summit-october-2016-barcelona-tickets-24406960877?aff=eac2" target="_blank">OpenStack Summit Barcelona 2016</a></p>
+                        <p>Es un evento de 3 días para crear la mejor cloud-application utilizando OpenStack y sus APIs, y se llevara a cabo en el Tecnológico de Monterrey del 9 al 11 de Septiembre. Los ganadores tendrán la oportunidad de viajar al <a href="https://www.eventbrite.com/e/openstack-summit-october-2016-barcelona-tickets-24406960877?aff=eac2" target="_blank">OpenStack Summit Barcelona 2016</a>. </p>
                     </div>
                 </div>
                 <!-- /Service Box 1 -->

@@ -35,7 +35,7 @@
                   Registro
                 </div>
                 <div class="content column desc">
-                  Libre
+                  Libre limitada a 200 participantes
                 </div>
               </div>
 

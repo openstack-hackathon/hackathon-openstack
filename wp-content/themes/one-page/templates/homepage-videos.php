@@ -31,7 +31,7 @@
           </div>
 
           <div class="grid-item border-top border-left border-bottom border-right border">
-            <h4 class="grid-title">MAKERS</h4>
+            <h4 class="grid-title">BIGDATA/ANAL&Iacute;TICOS</h4>
             <p></p>
           </div>
         </div>
