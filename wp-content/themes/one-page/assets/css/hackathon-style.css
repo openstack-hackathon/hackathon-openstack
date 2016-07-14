@@ -54,8 +54,8 @@ input{
     color: #2c3e50 !important;
 }
 
-.comment-meta commentmetadata p{
-  color: #afb3b7;
+.comment-meta .commentmetadata p{
+  color: #afb3b7 !important;
 }
 
 a.active,
