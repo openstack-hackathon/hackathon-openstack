@@ -11,7 +11,7 @@ if ( post_password_required() ) {
 	<?php if ( have_comments() ) : ?>
 		<h3 id="comments">
 			<?php
-			comments_number( __( 'Sin respuestas', 'one-page' ), __( 'Una Respuesta', 'one-page' ), __( '% Respuestas', 'one-page' ) );
+			comments_number( __( 'Sin respuestas', 'one-page' ), __( 'Una Respuesta ', 'one-page' ), __( '% Respuestas', 'one-page' ) );
 			_e( 'al momento.', 'one-page' );
 			?></h3>
 		<ol class="commentlist">
