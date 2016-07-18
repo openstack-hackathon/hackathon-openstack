@@ -1,4 +1,27 @@
+/*form*/
+.caldera-form-page{
+  width: 90% !important;
+  left: 5% !important;
+  position: relative !important;
+  color:#fff !important;
+}
+.page-title{
+  text-align: center;
+}
 
+.caldera-grid input,
+.caldera-grid select{
+  background-color: #737373 !important;
+  border: 0px !important;
+  color: #fff !important;
+}
+
+.help-block{
+  color: #D7D7D7 !important;
+  font-size: 12px !important;
+}
+
+/*fin form*/
 @font-face {
   font-family: 'Industri';
   src: url('../fonts/Industri-Bold.otf') format('opentype');
@@ -256,14 +279,14 @@ a.btn{
 }
 
 .btn {
-  border: 1px solid #fff;
-  text-transform: uppercase;
-  padding: 10px 25px;
-  border-radius: 20px;
+  border: 1px solid #fff !important;
+  text-transform: uppercase !important;
+  padding: 10px 25px !important;
+  border-radius: 20px !important;
 }
 
 .btn:hover {
-  background-color: #fff;
+  background-color: #fff !important;
   color: #d63027 !important;
 }
 
