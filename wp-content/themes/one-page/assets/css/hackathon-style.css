@@ -270,6 +270,15 @@ a.btn{
   width: 3px;
 }
 
+
+.comment-body a{
+  color:#000;
+}
+
+.comment-body a:hover{
+  color:#000;
+}
+
 .subtitle {
   color: #d63027;
   font-family: 'Open Sans', Verdana, sans-serif;
