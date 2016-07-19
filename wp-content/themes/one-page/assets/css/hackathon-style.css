@@ -276,7 +276,7 @@ a.btn{
 }
 
 .comment-body a:hover{
-  color:#000;
+  color:#000 !important;
 }
 
 .subtitle {
