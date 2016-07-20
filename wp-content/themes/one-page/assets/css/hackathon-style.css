@@ -22,6 +22,12 @@
 }
 
 /*fin form*/
+
+.register .btn{
+      margin-top: 15px !important;
+}
+
+
 @font-face {
   font-family: 'Industri';
   src: url('../fonts/Industri-Bold.otf') format('opentype');
