@@ -7,7 +7,7 @@
 
             <div class="container-date row">
               <div class="header-date pull-right">
-                <div class="days">09-11 </div>
+                <div class="days">09 al 11 </div>
                 <div class="month">sept</div>
                 <div class="year">2016 </div>
               </div>

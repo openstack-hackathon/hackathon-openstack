@@ -12,13 +12,13 @@
 
             <div class="grid-item">
               <h4 class="grid-title">No tengo un equipo ¿Qué debería de hacer?</h4>
-              <p> Puedes registrarte usando la option "Registro de participante individual" y antes del evento realizaremos
-                actividades para que encunetres a tu equipo perfecto</p>
+              <p> Puedes registrarte usando la opcion "Registro de participante individual" y antes del evento realizaremos
+                actividades para que encuentres a tu equipo perfecto</p>
             </div>
 
             <div class="grid-item">
               <h4 class="grid-title">¿Cuál es el premio al primer lugar?</h4>
-              <p>Un viaje todo pagado al OpenStack summit en Barcelona, donde presentarás tu proyecto a miles de personas a nivel internacional</p>
+              <p> Recibir apoyo para asistir al OpenStack Summit de Barcelona* (consulta las bases y condiciones)</p>
             </div>
 
             <!--div class="grid-item">

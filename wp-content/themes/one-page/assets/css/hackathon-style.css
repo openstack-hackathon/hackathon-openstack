@@ -74,6 +74,10 @@ a:visited {
   text-decoration: underline;
 }
 
+.header .navbar#up-menu {
+    background-color: #000 !important;
+}
+
 .header .navbar {
     background-color: #2d3237 !important;
 }
@@ -136,14 +140,15 @@ header .container-date .header-date {
 }
 
 header .container-date .header-date .days{
+      font-size: 23px;
 }
 header .container-date .header-date .month{
-  letter-spacing: 7pt;
+  letter-spacing: 12pt;
   font-size: 24px;
 }
 header .container-date .header-date .year{
-  letter-spacing: 7pt;
-  font-size: 24px;
+      letter-spacing: 11pt;
+    font-size: 25px;
 }
 
 header .container-logo-hackathon {
