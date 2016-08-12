@@ -304,6 +304,12 @@ function onepage_sections() {
         'callback' => 'onepage_testimonial_section',
     );
 
+    $sections['jueces_section'] = array(
+        'id' => 'jueces_section',
+        'label' => __('Jueces Section', 'one-page'),
+        'callback' => 'onepage_jueces_section',
+    );
+
     $sections['price_section'] = array(
         'id' => 'price_section',
         'label' => __('Price Section', 'one-page'),
@@ -412,6 +418,10 @@ function onepage_video_section() {
 
 function onepage_testimonial_section() {
     get_template_part('templates/homepage', 'testimonials');
+}
+
+function onepage_jueces_section() {
+    get_template_part('templates/homepage', 'jueces');
 }
 
 function onepage_portfolio_section() {

@@ -52,15 +52,40 @@
         <!-- Header Content -->
         <div class="header">
             <div class="header-container">
-                
+                <!-- Extra Navigation -->
+                <nav class="navbar navbar-default main-menu" id="up-menu">
+                    <div class="container">
+                        <div class="row">
+                          
+                            <div class="col-md-12">
+                                <div class="menu_wrapper">
+                                    <div id="MainNav">
+                                        <div id="menu" class="menu-menu-1-container up-menu">
+                                            <div class="collapse navbar-collapse nav-menu" id="bs-example-navbar-collapse-1">
+                                                <ul  class="nav navbar-nav navbar-right sf-menu sf-js-enabled sf-shadow">
+                                                  <li iclass="inicio menu-item menu-item-type-custom menu-item-object-custom menu-item-4 active current">
+                                                    <a href="/entrenamientos-previos">Entrenamientos Previos</a>
+                                                  </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+
                 <!-- Navigation -->
                 <nav class="navbar navbar-default main-menu">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-1">
-                                <div class="logo">
+                                <a href="/" class="logo">
                                     
-                                </div>
+                                </a>
                             </div>
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="col-md-11">
@@ -72,7 +97,7 @@
 												if ( is_front_page() ) {
 													onepage_front_nav();
 												} else {
-													onepage_subpage_menu_nav();
+													
 												}
 												?>
                                             </div>

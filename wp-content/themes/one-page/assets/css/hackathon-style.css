@@ -854,3 +854,146 @@ main {
 }
 
 
+/*jueces*/
+
+.juez {
+  padding: 60px 0;
+  text-align: center; 
+}
+
+.juez p {
+  padding: 20px 0 60px;
+  color: rgba(255,255,255, 0.85);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+.juez h3 {
+  padding: 0 0 15px;
+  font-family: 'norwester';
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.juez h4  {
+  margin-top: 15px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.juez h4 span {
+    display: block;
+    position: relative;
+    left: -40px;
+    top: -2px;
+    font-size: 26px;
+    background: none;
+    padding: 0;
+}
+
+.juez .unhover_img{
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 2px 2px 0px rgba(0,0,0, 0.18);
+    transition: all  0.1s ease-in;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    
+}
+
+.juez .unhover_img img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+
+.juez .unhover_img img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.description-juez{
+  background-color: #fff;
+  color: #000;
+  padding: 13px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.arrow-up {
+      width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 11px solid #fff;
+    top: -22px;
+    position: relative;
+    left: 42%;
+}
+
+
+
+.page_item{
+  display: none !important;
+}
+  
+.juez .unhover_img:hover {
+  border: 3px solid #d63027;
+  transition: all 0.1s ease-in; 
+}
+
+#ruy-cervantes-photo:hover + #ruy-cervantes{
+  display: block;
+}
+
+#patrick-simpson-photo:hover + #patrick-simpson{
+  display: block;
+}
+
+#edgar-magana-photo:hover + #edgar-magana{
+  display: block;
+}
+
+#mak-gutierrez-photo:hover + #mak-gutierrez{
+  display: block;
+}
+
+#ruy-cervantes,
+#patrick-simpson,
+#edgar-magana,
+#mak-gutierrez{
+  display: none;
+}
+
+.juez span {
+  padding: 8px 20px;
+  position: relative;
+  top: -64px;
+  left: -42px;
+  display: inline-block;
+  background: #4593e3;
+  border-radius: 0 16px 16px 0;
+  font-size: 16px;
+}
+
+/**/
+
+.up-menu ul li a{
+  text-transform: initial;
+    font-weight: normal;
+    font-size: 12px;
+}
+
