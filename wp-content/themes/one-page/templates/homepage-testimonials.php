@@ -83,7 +83,7 @@
                 <div class="unhover_img">
                     <img src="openstack/img/jueces/edgar-magana.jpg" alt="Edgar Magana" />
                 </div>
-                <h4><span>Edgar </span> Magana</h4>
+                <h4><span>Edgar </span> Magaña</h4>
               </div>
             </div>
 
