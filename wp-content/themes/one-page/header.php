@@ -58,19 +58,15 @@
                         <div class="row">
                           
                             <div class="col-md-12">
-                                <div class="menu_wrapper">
-                                    <div id="MainNav">
-                                        <div id="menu" class="menu-menu-1-container up-menu">
-                                            <div class="collapse navbar-collapse nav-menu" id="bs-example-navbar-collapse-1">
+                                
+                                
                                                 <ul  class="nav navbar-nav navbar-right sf-menu sf-js-enabled sf-shadow">
                                                   <li iclass="inicio menu-item menu-item-type-custom menu-item-object-custom menu-item-4 active current">
                                                     <a href="/entrenamientos-previos">Entrenamientos Previos</a>
                                                   </li>
                                                 </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                            
+                              
                             </div>
                         </div>
                         <!-- /.navbar-collapse -->
