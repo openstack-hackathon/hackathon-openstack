@@ -927,10 +927,13 @@ main {
 
 .description-juez{
   background-color: #fff;
-  color: #000;
   padding: 13px;
   border-radius: 8px;
   text-align: center;
+}
+
+.description-juez p{
+  color: #000 !important;
 }
 
 .arrow-up {
@@ -955,19 +958,19 @@ main {
   transition: all 0.1s ease-in; 
 }
 
-#ruy-cervantes-photo:hover + #ruy-cervantes{
+#ruy-cervantes-photo:hover ~ #ruy-cervantes{
   display: block;
 }
 
-#patrick-simpson-photo:hover + #patrick-simpson{
+#patrick-simpson-photo:hover ~ #patrick-simpson{
   display: block;
 }
 
-#edgar-magana-photo:hover + #edgar-magana{
+#edgar-magana-photo:hover ~ #edgar-magana{
   display: block;
 }
 
-#mak-gutierrez-photo:hover + #mak-gutierrez{
+#mak-gutierrez-photo:hover ~ #mak-gutierrez{
   display: block;
 }
 
@@ -976,7 +979,27 @@ main {
 #edgar-magana,
 #mak-gutierrez{
   display: none;
+      top: -60px;
 }
+
+#mak-gutierrez .arrow-up{
+  left: 35%;
+}
+
+#ruy-cervantes .arrow-up{
+   left: 8%;
+}
+
+#patrick-simpson .arrow-up{
+  left: 88%;
+}
+
+#edgar-magana .arrow-up{
+  left: 62%;
+}
+   
+
+    
 
 .juez span {
   padding: 8px 20px;
