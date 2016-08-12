@@ -6,12 +6,12 @@
           <div class="row txt-center">
 
             <div class="col-xs-6">
-              <img class="image-responsive" src="openstack/img/intel-logo_white.png">
+              <img class="image-responsive" src="openstack/img/intel-logo_white.png" style="    width: 300px;">
               
             </div>
 
             <div class="col-xs-6">
-              <img class="image-responsive" src="openstack/img/TecMonterrey_Horizontal_blanco.png" style="    margin-top: 50px;">
+              <img class="image-responsive" src="openstack/img/TecMonterrey_Horizontal_blanco.png" style="      width: 300px;  margin-top: 50px;">
             </div>
             
           </div>

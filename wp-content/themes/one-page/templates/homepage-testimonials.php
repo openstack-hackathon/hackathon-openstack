@@ -92,7 +92,7 @@
                 <div class="unhover_img">
                     <img src="openstack/img/jueces/manuel-vidaurre.png" alt="Manuel Vidaurre" class="portrait"/>
                 </div>
-                <h4><span>Patrick </span> Simpson</h4>
+                <h4><span>Manuel  </span> Vidaurre</h4>
               </div>  
             </div>
 
