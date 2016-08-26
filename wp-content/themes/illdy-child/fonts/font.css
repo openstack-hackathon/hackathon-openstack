@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Industri-Bold';
+  src: url('Industri-Bold.eot');
+  src: url('Industri-Bold.woff2') format('woff2'),
+       url('Industri-Bold.woff') format('woff'),
+       url('Industri-Bold.ttf') format('truetype'),
+       url('Industri-Bold.svg#Industri-Bold') format('svg'),
+       url('Industri-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
