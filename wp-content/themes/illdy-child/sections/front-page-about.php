@@ -29,7 +29,7 @@ if ( current_user_can( 'edit_theme_options' ) ) {
 						</div><!--/.col-sm-12-->
 					<?php endif; ?>
 					<?php if( $general_entry ): ?>
-						<div class="col-sm-6 col-sm-offset-3">
+						<div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
 							<p><?php echo illdy_sanitize_html( $general_entry ); ?></p>
 						</div><!--/.col-sm-10.col-sm-offset-1-->
 					<?php endif; ?>
