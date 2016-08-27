@@ -676,6 +676,7 @@ body a:focus {
 
   #footer .google-maps-widget {
     margin-top: 0;
+    text-align: right;
   }
 }
 
