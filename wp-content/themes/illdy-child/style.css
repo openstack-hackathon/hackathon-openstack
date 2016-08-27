@@ -302,6 +302,32 @@ body a:focus {
   display: block;
 }
 
+#latest-news .latest-news-button,
+#blog .blog-post .blog-post-button {
+  background-color: #e42015;
+}
+
+#latest-news .latest-news-button:hover,
+#blog .blog-post .blog-post-button:hover {
+  background-color: #42a5f5;
+}
+
+.widget ul li a:hover {
+  color: #e42015;
+}
+
+.blog-post-related-articles .related-post:hover .related-post-title {
+  color: #42a5f5;
+}
+
+#comments #respond .comment-form #input-submit {
+  border: none;
+}
+
+#comments #respond .comment-form #input-submit:hover {
+  background-color: #42a5f5;
+}
+
 #latest-news .section-content .post {
   background-color: transparent;
 }
