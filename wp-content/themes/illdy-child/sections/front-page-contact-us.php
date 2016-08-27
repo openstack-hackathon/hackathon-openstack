@@ -71,29 +71,43 @@ if ( $general_title != '' || $general_entry != '' || $general_address_title != '
 				<div class="col-sm-12">
 					<div class="row">
 						<div class="col-sm-12">
-							<div class="contact-us-box">
+							<div class="contact-us-box row">
 								<?php if( $contact_bar_twitter_url || $contact_bar_facebook_url || $contact_bar_linkedin_url || $contact_bar_youtube_url || $contact_bar_slack_url || $contact_bar_github_url): ?>
 								<div class="contact-us-social">
 									<?php if( $contact_bar_twitter_url ): ?>
-										<a href="<?php echo esc_url( $contact_bar_twitter_url ); ?>" title="<?php _e( 'Twitter', 'illdy' ); ?>" target="_blank"><i class="fa fa-twitter"></i></a>
+										<div class="col-xs-4 col-md-2">
+											<a href="<?php echo esc_url( $contact_bar_twitter_url ); ?>" title="<?php _e( 'Twitter', 'illdy' ); ?>" target="_blank"><i class="fa fa-twitter"></i></a>
+										</div>
 									<?php endif; ?>
 									<?php if( $contact_bar_facebook_url ): ?>
-										<a href="<?php echo esc_url( $contact_bar_facebook_url ); ?>" title="<?php _e( 'Facebook', 'illdy' ); ?>" target="_blank"><i class="fa fa-facebook"></i></a>
+										<div class="col-xs-4 col-md-2">
+											<a href="<?php echo esc_url( $contact_bar_facebook_url ); ?>" title="<?php _e( 'Facebook', 'illdy' ); ?>" target="_blank"><i class="fa fa-facebook"></i></a>
+										</div>
 									<?php endif; ?>
 									<?php if( $contact_bar_youtube_url ): ?>
-										<a href="<?php echo esc_url( $contact_bar_youtube_url ); ?>" title="<?php _e( 'YouTube', 'illdy' ); ?>" target="_blank"><i class="fa fa-youtube"></i></a>
+										<div class="col-xs-4 col-md-2">
+											<a href="<?php echo esc_url( $contact_bar_youtube_url ); ?>" title="<?php _e( 'YouTube', 'illdy' ); ?>" target="_blank"><i class="fa fa-youtube"></i></a>
+										</div>
 									<?php endif; ?>
 									<?php if( $contact_bar_slack_url ): ?>
-										<a href="<?php echo esc_url( $contact_bar_slack_url ); ?>" title="<?php _e( 'Slack', 'illdy' ); ?>" target="_blank"><i class="fa fa-slack"></i></a>
+										<div class="col-xs-4 col-md-2">
+											<a href="<?php echo esc_url( $contact_bar_slack_url ); ?>" title="<?php _e( 'Slack', 'illdy' ); ?>" target="_blank"><i class="fa fa-slack"></i></a>
+										</div>
 									<?php endif; ?>
 									<?php if( $contact_bar_github_url ): ?>
-										<a href="<?php echo esc_url( $contact_bar_github_url ); ?>" title="<?php _e( 'GitHub', 'illdy' ); ?>" target="_blank"><i class="fa fa-git-square"></i></a>
+										<div class="col-xs-4 col-md-2">
+											<a href="<?php echo esc_url( $contact_bar_github_url ); ?>" title="<?php _e( 'GitHub', 'illdy' ); ?>" target="_blank"><i class="fa fa-git-square"></i></a>
+										</div>
 									<?php endif; ?>
 									<?php if( $contact_bar_linkedin_url ): ?>
-										<a href="<?php echo esc_url( $contact_bar_linkedin_url ); ?>" title="<?php _e( 'LinkedIn', 'illdy' ); ?>" target="_blank"><i class="fa fa-linkedin"></i></a>
+										<div class="col-xs-4 col-md-2">
+											<a href="<?php echo esc_url( $contact_bar_linkedin_url ); ?>" title="<?php _e( 'LinkedIn', 'illdy' ); ?>" target="_blank"><i class="fa fa-linkedin"></i></a>
+										</div>
 									<?php endif; ?>
 									<?php if( $email ): ?>
-										<a href="mailto:<?php echo esc_attr( $email ); ?>" title="<?php echo esc_attr( $email ); ?>"><i class="fa fa-envelope"></i></a>
+										<div class="col-xs-4 col-md-2">
+											<a href="mailto:<?php echo esc_attr( $email ); ?>" title="<?php echo esc_attr( $email ); ?>"><i class="fa fa-envelope"></i></a>
+										</div>
 								<?php endif; ?>
 								</div><!--/.contact-us-social-->
 							<?php endif; ?>

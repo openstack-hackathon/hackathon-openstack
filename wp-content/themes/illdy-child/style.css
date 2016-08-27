@@ -230,7 +230,7 @@ body a:focus {
   width: auto;
   text-transform: inherit;
   margin-left: 25px;
-  max-width: 80%;
+  max-width: 75%;
 }
 
 #services .section-content .service .service-entry {
@@ -346,6 +346,10 @@ body a:focus {
 
 #contact-us .section-content .contact-us-social {
   text-align: center;
+}
+
+#contact-us .section-content .contact-us-social > div {
+  margin-bottom: 25px;
 }
 
 #contact-us .section-content a,
@@ -644,6 +648,10 @@ body a:focus {
 
   #team .widget_illdy_person .person-content {
     min-height: 450px;
+  }
+
+  #contact-us .section-content .contact-us-social > div {
+    margin-bottom: 0;
   }
 }
 
