@@ -77,7 +77,6 @@ h6,
 }
 
 img {
-  width: 100%;
   height: auto;
   max-width: 100%;
   margin: 0 15px;
@@ -122,8 +121,8 @@ body a:focus {
 
 .open-responsive-menu {
   position: absolute;
-  right: 25px;
-  top: -20px;
+  right: 0;
+  top: -55px;
 }
 
 #header {
