@@ -232,7 +232,7 @@ function illdy_widgets() {
         'name'          => __( 'Front page - Join Us Sidebar', 'illdy' ),
         'id'            => 'front-page-join-us-sidebar',
         'description'   => __( 'The widgets added in this sidebar will appear in join us section from front page.', 'illdy' ),
-        'before_widget' => '<div id="%1$s" class="col-md-3 col-sm-offset-0 col-md-offset-1 %2$s">',
+        'before_widget' => '<div id="%1$s" class="col-md-3 col-xs-10 col-xs-offset-1 col-md-offset-1 %2$s">',
         'after_widget'  => '</div>',
         'before_title'  => '',
         'after_title'   => '',
