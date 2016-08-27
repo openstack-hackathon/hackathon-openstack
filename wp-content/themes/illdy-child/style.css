@@ -254,6 +254,11 @@ body a:focus {
   font-size: 12px;
 }
 
+#team .widget_illdy_person {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
 #team .section-content .person {
   margin-bottom: 50px;
   text-align: left;
