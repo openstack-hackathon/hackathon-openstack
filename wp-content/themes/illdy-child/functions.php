@@ -221,7 +221,7 @@ function illdy_widgets() {
         'name'          => __( 'Front page - Team Sidebar', 'illdy' ),
         'id'            => 'front-page-team-sidebar',
         'description'   => __( 'The widgets added in this sidebar will appear in team section from front page.', 'illdy' ),
-        'before_widget' => '<div id="%1$s" class="col-sm-6 col-md-3 col-sm-offset-0 col-xs-10 col-xs-offset-1 %2$s">',
+        'before_widget' => '<div id="%1$s" class="col-sm-6 col-lg-3 col-sm-offset-0 col-xs-10 col-xs-offset-1 %2$s">',
         'after_widget'  => '</div>',
         'before_title'  => '',
         'after_title'   => '',
