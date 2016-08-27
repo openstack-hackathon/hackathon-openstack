@@ -481,6 +481,10 @@ body a:focus {
   padding: 5px 25px 5px 0;
 }
 
+#footer .google-maps-widget {
+  margin-top: 50px;
+}
+
 #join-us,
 #banner {
   width: 100%;
@@ -668,6 +672,10 @@ body a:focus {
 
   #header {
     background-image: url('http://hackathon/wp-content/uploads/2016/08/hackathon_background_map_letters.png');
+  }
+
+  #footer .google-maps-widget {
+    margin-top: 0;
   }
 }
 
