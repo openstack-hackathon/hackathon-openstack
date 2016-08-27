@@ -620,6 +620,10 @@ body a:focus {
   #topics .page_in_widget {
     margin-left: 20%;
   }
+
+  #team .widget_illdy_person .person-content {
+    min-height: 580px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -637,10 +641,18 @@ body a:focus {
   .widget_illdy_join {
     margin-bottom: 0;
   }
+
+  #team .widget_illdy_person .person-content {
+    min-height: 450px;
+  }
 }
 
 @media (min-width: 1200px) {
   #services .section-content .service {
     min-height: 270px;
+  }
+
+  #team .widget_illdy_person .person-content {
+    min-height: 780px;
   }
 }
