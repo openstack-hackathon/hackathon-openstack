@@ -109,6 +109,10 @@ body a:focus {
   margin: 0;
 }
 
+#header {
+  background-image: url('http://hackathon/wp-content/uploads/2016/08/hackathon_background_map_letters.png');
+}
+
 #header .bottom-header .header-button-one:hover {
   background-color: #e42015;
   border-color: #e42015;
@@ -202,6 +206,10 @@ body a:focus {
   text-align: left;
 }
 
+#services .section-header {
+  margin-bottom: 35px;
+}
+
 #services .widget_illdy_service {
   margin-bottom: 40px;
   margin-top: 0;
@@ -254,9 +262,12 @@ body a:focus {
   font-size: 12px;
 }
 
+#team .section-header {
+  margin-bottom: 25px;
+}
+
 #team .widget_illdy_person {
   margin-top: 0px;
-  margin-bottom: 40px;
 }
 
 #team .section-content .person {
@@ -628,6 +639,10 @@ body a:focus {
   #team .widget_illdy_person .person-content {
     min-height: 580px;
   }
+
+  #header {
+    background-image: url('http://hackathon/wp-content/uploads/2016/08/hackathon_background_map_letters.png');
+  }
 }
 
 @media (min-width: 992px) {
@@ -662,5 +677,13 @@ body a:focus {
 
   #team .widget_illdy_person .person-content {
     min-height: 780px;
+  }
+
+  #team .section-header {
+    margin-bottom: 85px;
+  }
+
+  #services .section-header {
+    margin-bottom: 65px;
   }
 }

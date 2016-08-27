@@ -47,7 +47,7 @@ else:
 	$sections_order_ninth_section = get_theme_mod( 'illdy_general_sections_order_ninth_section', 9 );
 	$sections_order_tenth_section = get_theme_mod( 'illdy_general_sections_order_tenth_section', 10 );
 	$sections_order_eleventh_section = get_theme_mod( 'illdy_general_sections_order_elventh_section', 11 );
-	$sections_order_twelvth_section = get_theme_mod( 'illdy_general_sections_order_twelvth_section', 12 );
+	$sections_order_twelvth_section = get_theme_mod( '_general_sections_order_twelfth_section', 12 );
 	$sections_order_thirteenth_section = get_theme_mod( 'illdy_general_sections_order_thirteenth_section', 13 );
 	
 	if( have_posts() ):
@@ -125,7 +125,7 @@ else:
 	if( $sections_order_twelvth_section ):
 		illdy_sections_order( $sections_order_twelvth_section );
 	endif;
-
+echo $sections_order_thirteenth_section;
 	if( $sections_order_thirteenth_section ):
 		illdy_sections_order( $sections_order_thirteenth_section );
 	endif;
