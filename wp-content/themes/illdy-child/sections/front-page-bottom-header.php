@@ -38,7 +38,7 @@ if ( $first_row_from_title || $second_row_from_title || $third_row_from_title ||
 					<h2><?php if( $first_row_from_title ): echo '<span data-customizer="first-row-from-title">'. illdy_sanitize_html( $first_row_from_title ) .'</span><span class="span-dot first-span-dot">'. __( '.', 'illdy' ) .'</span>'; endif; ?> <?php if( $second_row_from_title ): echo '<span data-customizer="second-row-from-title">'. illdy_sanitize_html( $second_row_from_title ) .'</span><span class="span-dot second-span-dot">'. __( '.', 'illdy' ) .'</span>'; endif; ?> <?php if( $third_row_from_title ): echo '<span data-customizer="third-row-from-title">'. illdy_sanitize_html( $third_row_from_title ) .'</span>'; endif; ?></h2>
 				</div><!--/.col-sm-12-->
 			<?php endif; ?>
-			<div class="col-sm-8 col-sm-offset-2 col-md-6">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-5 col-md-5 col-md-offset-7">
 				<?php if( $entry ): ?>
 					<p><?php echo illdy_sanitize_html( $entry ); ?></p>
 				<?php endif; ?>

@@ -119,23 +119,13 @@ body a:focus {
   margin: 0;
 }
 
-.open-responsive-menu {
-  position: absolute;
-  right: 0;
-  top: -55px;
-}
-
-#header {
-  background-image: url('http://hackathon/wp-content/uploads/2016/08/hackathon_background_map_letters.png');
-}
-
 #header .bottom-header .header-button-one:hover {
   background-color: #e42015;
   border-color: #e42015;
   color: #fff;
 }
 
-#header .bottom-header .col-md-6 {
+#header .bottom-header * {
   text-align: left;
 }
 
