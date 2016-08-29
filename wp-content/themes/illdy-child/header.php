@@ -33,6 +33,7 @@ $preloader_enable = get_theme_mod( 'illdy_preloader_enable', 1 );
 
 			body #header .bottom-header {
 				padding-top: calc(100vw - 120px); 
+				padding-bottom: 80px;
 			}
 
 			@media (min-width: 768px) {
@@ -46,6 +47,7 @@ $preloader_enable = get_theme_mod( 'illdy_preloader_enable', 1 );
 
 				body #header .bottom-header {
 					padding-top: 100px; 
+					padding-bottom: 280px;
 				}
 			}
 
@@ -55,7 +57,7 @@ $preloader_enable = get_theme_mod( 'illdy_preloader_enable', 1 );
 				}
 
 				body #header .bottom-header {
-					padding-top: 240px; 
+					padding-top: 240px;
 				}
 			}
 		</style>
