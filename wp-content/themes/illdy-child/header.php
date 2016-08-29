@@ -10,6 +10,8 @@
 $logo = get_custom_logo();
 $text_logo = get_theme_mod( 'illdy_text_logo', __('Illdy', 'illdy') );
 $jumbotron_general_image = get_theme_mod( 'illdy_jumbotron_general_image', esc_url( get_template_directory_uri() . '/layout/images/front-page/front-page-header.png' ) );
+$jumbotron_general_image_mb = get_theme_mod( 'illdy_jumbotron_general_image_mb', esc_url( get_template_directory_uri() . '/layout/images/front-page/front-page-header.png' ) );
+$jumbotron_general_image_tb = get_theme_mod( 'illdy_jumbotron_general_image_tb', esc_url( get_template_directory_uri() . '/layout/images/front-page/front-page-header.png' ) );
 $preloader_enable = get_theme_mod( 'illdy_preloader_enable', 1 );
 ?>
 <!DOCTYPE html>
@@ -18,14 +20,52 @@ $preloader_enable = get_theme_mod( 'illdy_preloader_enable', 1 );
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-		
+		<style>
+			body #header {
+				background-image: url('<?php if( is_front_page() ): echo ( ( $jumbotron_general_image_mb ) ? esc_url( $jumbotron_general_image_mb ) : '' ); else: echo esc_url( get_header_image() ); endif; ?>');
+				-webkit-background-size: contain;
+		    -moz-background-size: contain;
+		    -o-background-size: contain;
+		    background-size: contain;
+		    background-repeat: no-repeat;
+		    background-color: #000;
+			}
+
+			body #header .bottom-header {
+				padding-top: calc(100vw - 120px); 
+			}
+
+			@media (min-width: 768px) {
+				body #header {
+					background-image: url('<?php if( is_front_page() ): echo ( ( $jumbotron_general_image_tb ) ? esc_url( $jumbotron_general_image_tb ) : '' ); else: echo esc_url( get_header_image() ); endif; ?>');
+					-webkit-background-size: cover;
+			    -moz-background-size: cover;
+			    -o-background-size: cover;
+			    background-size: cover;
+				}
+
+				body #header .bottom-header {
+					padding-top: 100px; 
+				}
+			}
+
+			@media (min-width: 1200px) {
+				body #header {
+					background-image: url('<?php if( is_front_page() ): echo ( ( $jumbotron_general_image ) ? esc_url( $jumbotron_general_image ) : '' ); else: echo esc_url( get_header_image() ); endif; ?>');
+				}
+
+				body #header .bottom-header {
+					padding-top: 240px; 
+				}
+			}
+		</style>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
 		<?php if( $preloader_enable == 1 ): ?>
 			<div class="pace-overlay"></div>
 		<?php endif; ?>
-		<header id="header" class="<?php if( is_front_page() ): echo 'header-front-page'; else: echo 'header-blog'; endif; ?>" style="background-image: url('<?php if( is_front_page() ): echo ( ( $jumbotron_general_image ) ? esc_url( $jumbotron_general_image ) : '' ); else: echo esc_url( get_header_image() ); endif; ?>');">
+		<header id="header" class="<?php if( is_front_page() ): echo 'header-front-page'; else: echo 'header-blog'; endif; ?>">
 			<div class="top-header">
 				<div class="container">
 					<div class="row">
@@ -36,7 +76,7 @@ $preloader_enable = get_theme_mod( 'illdy_preloader_enable', 1 );
 								<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" class="header-logo"><?php echo illdy_sanitize_html( $text_logo ); ?></a>
 							<?php endif; ?>
 						</div><!--/.col-sm-2-->
-						<div class="col-xs-10">
+						<div class="col-xs-6">
 							<nav class="header-navigation">
 								<ul class="clearfix">
 									<?php

@@ -45,9 +45,51 @@ $wp_customize->add_control(
     new WP_Customize_Image_Control(
         $wp_customize, $prefix . '_jumbotron_general_image',
         array(
-            'label'     => __( 'Image', 'illdy' ),
+            'label'     => __( 'Image Desktop', 'illdy' ),
             'section'   => $prefix .'_jumbotron_general',
             'settings'  => $prefix . '_jumbotron_general_image',
+            'priority'  => 1
+        )
+    )
+);
+
+// Image Tablet
+$wp_customize->add_setting(
+    $prefix . '_jumbotron_general_image_tb',
+    array(
+        'sanitize_callback' => 'esc_url_raw',
+        'default'           => esc_url( get_template_directory_uri() . '/layout/images/front-page/front-page-header.png' ),
+        'transport'         => 'postMessage'
+    )
+);
+$wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize, $prefix . '_jumbotron_general_image_tb',
+        array(
+            'label'     => __( 'Image Tablet', 'illdy' ),
+            'section'   => $prefix .'_jumbotron_general',
+            'settings'  => $prefix . '_jumbotron_general_image_tb',
+            'priority'  => 1
+        )
+    )
+);
+
+// Image Mobile
+$wp_customize->add_setting(
+    $prefix . '_jumbotron_general_image_mb',
+    array(
+        'sanitize_callback' => 'esc_url_raw',
+        'default'           => esc_url( get_template_directory_uri() . '/layout/images/front-page/front-page-header.png' ),
+        'transport'         => 'postMessage'
+    )
+);
+$wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize, $prefix . '_jumbotron_general_image_mb',
+        array(
+            'label'     => __( 'Image Mobile', 'illdy' ),
+            'section'   => $prefix .'_jumbotron_general',
+            'settings'  => $prefix . '_jumbotron_general_image_mb',
             'priority'  => 1
         )
     )
