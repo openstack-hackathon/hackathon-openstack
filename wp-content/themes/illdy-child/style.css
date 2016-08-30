@@ -758,14 +758,6 @@ body a:focus {
   margin-bottom: 5em;
 }
 
-.menu-group-header {
-  float: left;
-  width: 50%;
-  padding-top: 3.62rem;
-  margin-top: -3.62rem;
-  margin-left: -61.29%;
-}
-
 .menu-group-header:focus {
   outline: 0;
 }
@@ -805,6 +797,20 @@ body a:focus {
   margin-top: 0px;
   font-family: Roboto;
   font-weight: 600;
+}
+
+
+.food-menu-items .items section {
+  clear: both;
+  width: 100% !important;
+  padding-bottom: 1em !important;
+  margin-left: 0 !important;
+  margin-bottom: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.food-menu-items .markup-format p {
+  margin: 0px !important;
 }
 
 .food-menu-items .menu-group-title{
