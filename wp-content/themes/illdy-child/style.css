@@ -797,6 +797,7 @@ body a:focus {
   margin-top: 0px;
   font-family: Roboto;
   font-weight: 600;
+  letter-spacing: 0px !important;
 }
 
 
@@ -809,7 +810,7 @@ body a:focus {
   border-bottom: 0 !important;
 }
 
-.food-menu-items .markup-format p {
+.food-menu-items p {
   margin: 0px !important;
 }
 
@@ -819,7 +820,8 @@ body a:focus {
 }
 
 .food-menu-items .menu-group-description{
-  line-height: 30px;;
+  line-height: 30px;
+  min-height: 20px;
 }
 
 
