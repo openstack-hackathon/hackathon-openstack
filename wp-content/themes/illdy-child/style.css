@@ -788,6 +788,33 @@ body a:focus {
   display: none;
 }
 
+
+.food-menu-items .menu-group-nav a{
+  background-color: #13263F;
+  color: #fff;
+  text-decoration: none;
+}
+
+.food-menu-items .menu-group-nav a:hover{
+  text-decoration: underline;
+}
+
+.food-menu-items .menu-group-subtitle{
+  color: #213148;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.food-menu-items .menu-group-title{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.food-menu-items .menu-group-description{
+  line-height: 30px;;
+}
+
+
 .food-menu-item-header {
   margin-bottom: .38em;
   overflow: hidden;
@@ -807,6 +834,11 @@ body a:focus {
   float: left;
   max-width: 80%;
   letter-spacing: 0;
+}
+
+.markup-format a {
+  color: #e42015 !important;
+  text-decoration: none !important;
 }
 
 .food-menu-item-price {
