@@ -790,24 +790,26 @@ body a:focus {
 
 
 .food-menu-items .menu-group-nav a{
-  background-color: #13263F;
-  color: #fff;
+  background-color: #13263F !important;
+  color: #fff !important;
   text-decoration: none;
 }
 
 .food-menu-items .menu-group-nav a:hover{
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .food-menu-items .menu-group-subtitle{
   color: #213148;
   margin-bottom: 10px;
   margin-top: 0px;
+  font-family: Roboto;
+  font-weight: 600;
 }
 
 .food-menu-items .menu-group-title{
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: 5px !important;
+  margin-bottom: 10px !important;
 }
 
 .food-menu-items .menu-group-description{
