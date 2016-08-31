@@ -12,4 +12,12 @@ jQuery(document).ready(function($){
       $('#scroll-top').css({ 'opacity': 0 });
     });
   });
+
+  $('#team .project').hover(function(){
+    $(this).addClass('hover');
+  });
+
+  $('#team .project').mouseleave(function(){
+    $(this).removeClass('hover');
+  });
 });

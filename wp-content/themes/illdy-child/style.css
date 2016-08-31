@@ -290,6 +290,109 @@ body a:focus {
   font-size: 12px;
 }
 
+/* 04. Projects */
+#team {
+  width: 100%;
+  background-color: #fbfbfb;
+  padding: 65px 0;
+  text-align: center;
+}
+#team .container-fluid {
+  max-width: 1920px;
+}
+#team .section-header {
+  margin-bottom: 65px;
+}
+#team .project {
+  width: 100%;
+  height: 200px;
+  display: block;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#team .project:hover .project-overlay {
+  opacity: 0.3;
+}
+#team .project .project-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.6;
+  position: absolute;
+  bottom: -60%;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#team .project {
+  overflow: hidden;
+}
+
+#team .project.hover .project-overlay,
+#team .project.hover .meta-wrapper {
+  bottom: auto;
+}
+
+#team .project:hover .project-overlay {
+  opacity: 0.6;
+}
+
+#team .project .meta-wrapper {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: absolute;
+  bottom: -60%;
+  left: 0;
+  z-index: 1;
+  padding: 10px 15px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#team .project .meta-wrapper h4 {
+  margin-top: 0;
+}
+
+#team .project .meta-wrapper h5,
+#team .project .meta-wrapper p {
+  color: #fff;
+}
+
+#team .project .meta-wrapper p {
+  text-align: left;
+  margin-top: 30px;
+}
+
+#team .project .meta-wrapper .social-networks {
+  margin-top: 20px;
+}
+
+#team .project .meta-wrapper .social-networks a {
+  padding: 5px;
+  margin: 0 10px;
+}
+
+#team .project .meta-wrapper .social-networks a:hover {
+  color: #fff;
+}
+
+#team .project .meta-wrapper .social-networks .fa {
+  font-size: 18px;
+}
+
+#team .project .project-overlay {
+  background-color: #000;
+}
+
 #team .section-header {
   margin-bottom: 25px;
 }
