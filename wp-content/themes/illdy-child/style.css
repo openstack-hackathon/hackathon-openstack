@@ -412,6 +412,10 @@ body a:focus {
   margin-bottom: 35px;
 }
 
+#testimonials .section-content .testimonials-carousel .carousel-testimonial .testimonial-content {
+  margin-bottom: 0;
+}
+
 #contact-us {
   background-color: #eb3e4c;
 }
