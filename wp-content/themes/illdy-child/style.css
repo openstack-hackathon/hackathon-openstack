@@ -334,17 +334,8 @@ body a:focus {
   background-color: #42a5f5;
 }
 
-#latest-news .section-content .post {
-  background-color: transparent;
-}
-
 #latest-news .section-content .post .post-image {
   margin-bottom: 25px;
-}
-
-#latest-news .section-content .post .post-title,
-#latest-news .section-content .post .post-button {
-  padding: 0;
 }
 
 #latest-news .section-content .post .post-button,
@@ -356,7 +347,6 @@ body a:focus {
   color: #13273f;
   margin-bottom: 25px;
   margin-top: 15px;
-  padding: 0;
 }
 
 #header .bottom-header span.span-dot {
