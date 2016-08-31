@@ -58,12 +58,12 @@ $jetpack_testimonial_query = new WP_Query( $jetpack_testimonial_query_args );
 								<?php while( $jetpack_testimonial_query->have_posts() ): ?>
 									<?php $jetpack_testimonial_query->the_post(); ?>
 									<div class="carousel-testimonial" style="<?php if( $count_posts->publish == 1 ): echo 'margin-bottom: 42px;'; endif; ?>">
-										<div class="testimonial-meta">
-											<?php the_title(); ?>
-										</div><!--/.testimonial-meta-->
 										<div class="testimonial-image">
 											<?php the_post_thumbnail( $post->ID, 'illdy-front-page-testimonials' ); ?>
 										</div><!--/.testimonial-image-->
+										<div class="testimonial-meta">
+											<?php the_title(); ?>
+										</div><!--/.testimonial-meta-->
 										<div class="testimonial-content">
 											<blockquote><q><?php echo esc_html( get_the_content() ); ?></q></blockquote>
 										</div><!--/.testimonial-content-->
