@@ -77,8 +77,8 @@ $preloader_enable = get_theme_mod( 'illdy_preloader_enable', 1 );
 							<?php else: ?>
 								<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" class="header-logo"><?php echo illdy_sanitize_html( $text_logo ); ?></a>
 							<?php endif; ?>
-						</div><!--/.col-sm-2-->
-						<div class="col-xs-6 col-md-10">
+						</div><!--/.col-sm-4-->
+						<div class="col-xs-8 col-md-10">
 							<nav class="header-navigation">
 								<ul class="clearfix">
 									<?php

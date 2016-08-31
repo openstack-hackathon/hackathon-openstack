@@ -106,6 +106,15 @@ body a:focus {
   text-decoration: underline;
 }
 
+#header .top-header .header-navigation ul {
+  margin-top: 15px;
+}
+
+.open-responsive-menu {
+  padding: 10px !important;
+  margin-right: -10px !important;
+}
+
 #header .bottom-header .header-button-one {
   background: transparent;
   border: 1px solid #fff;
