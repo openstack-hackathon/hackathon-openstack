@@ -18,6 +18,11 @@ if ( current_user_can( 'edit_theme_options' ) ) {
 	$img_footer_logo = get_theme_mod( 'illdy_img_footer_logo' );
 }
 ?>
+
+	<div id="scroll-top">
+		<i class="fa fa-chevron-up"></i>
+	</div>
+
 		<footer id="footer">
 			<div class="container footer-widgets">
 				<div class="row">

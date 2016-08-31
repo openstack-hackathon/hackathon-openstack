@@ -4,6 +4,7 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_css_js' );
 
 function theme_enqueue_css_js() {
   wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+  wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/theme.js', array( 'jquery' ) );
 }
 
 add_action( 'after_setup_theme', 'illdy_setup' );

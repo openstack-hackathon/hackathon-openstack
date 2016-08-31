@@ -655,6 +655,31 @@ body a:focus {
   margin: 25px auto 0 auto;
 }
 
+#scroll-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-color: #fff;
+  background-color: rgba(228,32,21, 0.5);
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#scroll-top .fa {
+  position: relative;
+  top: 5px;
+}
+
 @media (min-width: 768px) {
   #services .section-content .service {
     min-height: 320px;
@@ -780,7 +805,6 @@ body a:focus {
   display: none;
 }
 
-
 .food-menu-items .menu-group-nav a{
   background-color: #13263F !important;
   color: #fff !important;
@@ -799,7 +823,6 @@ body a:focus {
   font-weight: 600;
   letter-spacing: 0px !important;
 }
-
 
 .food-menu-items .items section {
   clear: both;
@@ -823,7 +846,6 @@ body a:focus {
   line-height: 30px;
   min-height: 20px;
 }
-
 
 .food-menu-item-header {
   margin-bottom: .38em;
@@ -892,15 +914,12 @@ body a:focus {
 }
 
 @media only screen and (min-width: 55em) {
-
   .menu-group-nav-link {
     position: absolute;
   }
-
 }
 
 @media only screen and (min-width: 80em) {
-
   .sticky-menu-group-nav .menu-group-nav {
     position: fixed;
     width: 100%;
@@ -923,15 +942,12 @@ body a:focus {
   .sticky-menu-group-nav .menu-group-nav-link {
     opacity: 0;
   }
-
 }
 
 @media only screen and (max-width: 80em) {
-
   .menu-group-nav-container {
     height: auto !important;
   }
-
 }
 
 
