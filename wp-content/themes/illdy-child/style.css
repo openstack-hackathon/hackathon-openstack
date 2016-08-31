@@ -395,6 +395,19 @@ body a:focus {
   color: #e42015;
 }
 
+#testimonials .section-content .testimonials-carousel .carousel-testimonial .testimonial-image img {
+  width: 200px;
+  height: 200px;
+}
+
+#testimonials .section-content .testimonials-carousel .carousel-testimonial .testimonial-content:after {
+  display: none;
+}
+
+#testimonials .section-content .testimonials-carousel .carousel-testimonial .testimonial-image {
+  margin-bottom: 30px;
+}
+
 #contact-us {
   background-color: #eb3e4c;
 }
