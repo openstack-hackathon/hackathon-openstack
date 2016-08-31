@@ -743,7 +743,7 @@ body a:focus {
 
 @media (min-width: 1200px) {
   #services .section-content .service {
-    min-height: 270px;
+    min-height: 290px;
   }
 
   #team .widget_illdy_person .person-content {
