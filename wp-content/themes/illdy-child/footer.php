@@ -93,7 +93,7 @@ if ( current_user_can( 'edit_theme_options' ) ) {
 					<?php if( $display_copyright == 1 ): ?>
 						<p class="copyright"><?php echo illdy_sanitize_html( $footer_copyright ); ?></p>
 					<?php else: ?>
-						<p class="copyright"><span data-customizer="copyright-credit"><?php printf( '%s <a href="%s" title="%s" target="_blank">%s</a>.', __( 'Theme:', 'illdy' ), esc_url( 'http://colorlib.com/wp/themes/illdy' ), __( 'Illdy', 'illdy' ), __( 'Illdy', 'illdy' ) ); ?></span></p>
+						<p class="copyright"><?php echo '&copy; Copyright ' . date('Y') . '. All Rights Reserved.'; ?></p>
 					<?php endif; ?>
 				</div>
 			</div>
