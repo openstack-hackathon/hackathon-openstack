@@ -66,11 +66,11 @@ class Illdy_Widget_Project extends WP_Widget {
         }
 
         if (!empty($gp_url)) {
-          $meta .= '<a href="' . $gp_url . '" target="_blank"><i class="fa fa-twitter"></i></a>';
+          $meta .= '<a href="' . $gp_url . '" target="_blank"><i class="fa fa-google-plus"></i></a>';
         }
 
         if (!empty($twitter_url)) {
-          $meta .= '<a href="' . $twitter_url . '" target="_blank"><i class="fa fa-google-plus"></i></a>';
+          $meta .= '<a href="' . $twitter_url . '" target="_blank"><i class="fa fa-twitter"></i></a>';
         }
 
         if (!empty($linkedin_url)) {
